@@ -1,2 +1,2 @@
-use<Moduls.scad>
-leg(25, 41);
+use<Grouser.scad>
+grouser(25, 41);

@@ -1,5 +1,5 @@
 module cycloid(x, r){
-    translate([(x*(r*r+x*x+y*y)-y*sqrt((x*x+y*y)*(18*r*r-x*x-y*y)-pow(r, 4))/(x*x+y*y)/2, , 0]){
+    translate([(x+(x*r^2-y*(16*r^2*(x^2+y^2)-(x^2+y^2-r^2)^2)^0.5)/(x^2+y^2))/2, (y+(y*r^2-(16*r^2*(x^2+y^2)-(x^2+y^2-r^2)^2)^0.5)/(x^2+y^2))/2, 0]){
         cylinder(32, r=2*r, $fn=360);
     }
 }

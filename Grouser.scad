@@ -7,9 +7,9 @@ module grouser(x1, x2, r=272, w=0){
     difference(){
         intersection(){
             cylinder(32, r=r, $fn=360);
-            cycloid(r, x1);
+            cycloid(x1, r);
         }
-        cycloid(r, x2);
+        cycloid(x2, r);
         if(w){
            cylinder(32, r=4); 
         }else{

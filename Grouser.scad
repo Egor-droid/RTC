@@ -7,13 +7,15 @@ module grouser(x1, x2, r=272, w=0){
     difference(){
         intersection(){
             cylinder(32, r=r, $fn=360);
-            cycloid(x1, r);
+            cycloid(x2, r);
         }
-        cycloid(x2, r);
+        cycloid(x1, r);
         if(w){
-           cylinder(32, r=4); 
+            cylinder(32, r=4); 
         }else{
-           cube([272, 258, 32]); 
+            translate([-272, -272, 0]){
+                cube([544, 530, 32]);
+            } 
         }
     }
 }

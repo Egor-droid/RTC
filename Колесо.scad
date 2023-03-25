@@ -1,2 +1,2 @@
 use<Grouser.scad>
-grouser(69, 57);
+grouser(r=45, w=1);

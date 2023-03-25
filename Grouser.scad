@@ -11,7 +11,7 @@ module grouser(x2=45*tan(360/65), x1=0, r=272, w=0){
         }
         cycloid(x1, 258-213*w, r);
         if(w){
-            cylinder(32, r=4); 
+            cylinder(32, r=4, $fn=360); 
         }else{
             translate([-272, -272]){
                 cube([544, 530, 32]);
